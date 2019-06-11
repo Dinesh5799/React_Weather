@@ -95,7 +95,7 @@ class Map extends Component {
       this.map.setCenter(
         new window.google.maps.LatLng(this.props.lat, this.props.lng)
       );
-      this.map.setZoom(8);
+      this.map.setZoom(10);
       coordinates = [];
     }
   }
@@ -109,7 +109,7 @@ class Map extends Component {
           style={{
             width: "70vw",
             height: "75vh",
-            marginLeft: "4.5vw",
+            marginLeft: "5vw",
             boxSizing: "border-box",
             float: "left"
           }}

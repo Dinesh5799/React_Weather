@@ -38,21 +38,25 @@ class WeatherInfo extends Component {
             <h4 className="card-title">
               {this.state.weatherData.placeSearched}
             </h4>
-            <p className="card-text">{`${this.state.weatherData.temp_c} °C   ${
-              this.state.weatherData.condition.text
-            }`}</p>
+            <p className="card-text">{`${
+              this.state.weatherData.temp_c
+            } °C   ${"     " + this.state.weatherData.condition.text}`}</p>
           </div>
         </div>
       );
     } else {
-      return <div>Search for a location to see weather info!</div>;
+      return (
+        <div style={{ textAlign: "center" }}>
+          Search for a location to see weather info!
+        </div>
+      );
     }
   };
   render() {
     return (
       <div
         style={{
-          marginLeft: "76vw",
+          marginLeft: "76.5vw",
           width: "18.5vw",
           border: "1px solid #a1a1a1",
           alignContent: "center",

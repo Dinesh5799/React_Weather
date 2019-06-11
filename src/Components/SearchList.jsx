@@ -38,8 +38,8 @@ class SearchList extends Component {
       );
     } else {
       return (
-        <div style={{ textAlign: "center", marginTop: "100px" }}>
-          <h3>No previous searched locations.</h3>
+        <div style={{ textAlign: "center", marginTop: "200px" }}>
+          <h5>No previous searched locations</h5>
         </div>
       );
     }
