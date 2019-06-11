@@ -56,7 +56,7 @@ class SearchBar extends Component {
           style={{ width: "100%", height: "30px" }}
           ref={this.autocompleteInput}
           id="autocomplete"
-          placeholder="Enter your address"
+          placeholder="Search for a location"
           type="text"
         />
       </div>
