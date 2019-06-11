@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import "./App.css";
 import Nav from "./Navigation";
-import About from "./About";
-import Shop from "./Shop";
-import ItemDetail from "./ItemDetail";
+import Home from "./Home";
+import Dashboard from "./Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -15,16 +13,12 @@ class App extends Component {
           <Nav />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/shop" exact component={Shop} />
-            <Route path="/shop/:id" component={ItemDetail} />
+            <Route path="/dashboard" component={Dashboard} />
           </Switch>
         </div>
       </Router>
     );
   }
 }
-
-const Home = () => <div>Home</div>;
 
 export default App;

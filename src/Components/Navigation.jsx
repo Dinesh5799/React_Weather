@@ -1,21 +1,35 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Navigation.css";
 
 class Nav extends Component {
   state = {};
   render() {
     return (
-      <nav>
-        <h3>Nav</h3>
+      // <nav>
+      //   <h3>Nav</h3>
+      //   <ul className="nav-links">
+      //     <Link to="/">
+      //       <li>Home</li>
+      //     </Link>
+      //     <Link to="/dashboard">
+      //       <li>Dashboard</li>
+      //     </Link>
+      //   </ul>
+      // </nav>
+      <div class="topnav">
+        <a class="active" href="#home">
+          Weather-Report
+        </a>
         <ul className="nav-links">
-          <Link to="/shop">
-            <li>Shop</li>
+          <Link to="/">
+            <li>Home</li>
           </Link>
-          <Link to="/about">
-            <li>About</li>
+          <Link to="/dashboard">
+            <li>Dashboard</li>
           </Link>
         </ul>
-      </nav>
+      </div>
     );
   }
 }
