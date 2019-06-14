@@ -17,8 +17,8 @@ class Nav extends Component {
       //     </Link>
       //   </ul>
       // </nav>
-      <div class="topnav">
-        <a class="active" href="#home">
+      <div className="topnav">
+        <a className="active" href="#home">
           Weather-Report
         </a>
         <ul className="nav-links">
